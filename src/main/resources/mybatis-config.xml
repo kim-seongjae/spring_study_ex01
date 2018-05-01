@@ -5,7 +5,11 @@
 	
 <configuration>
 
-
+	<!-- XML Mapper이용시 parameterType이나 resultType패키지까지 포함된 클래스명을 줄여줌 -->
+	<typeAliases>
+		<package name="org.zerock.domain"/>
+	
+	</typeAliases>
 
 </configuration>
 
