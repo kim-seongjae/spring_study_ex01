@@ -76,6 +76,13 @@
 			formObj.attr("action", "/board/listPage");
 			formObj.submit();
 		})
+		
+		$(".removeBtn").on("click", function(){
+			formObj.attr("action", "/board/removePage");
+			formObj.submit();
+		});
+		
+		
 	});
 </script>
 
