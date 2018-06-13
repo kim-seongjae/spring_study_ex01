@@ -82,6 +82,11 @@
 			formObj.submit();
 		});
 		
+		$(".modifyBtn").on("click", function(){
+			formObj.attr("action", "/board/modifyPage");
+			formObj.attr("method","get");
+			formObj.submit();
+		})
 		
 	});
 </script>
