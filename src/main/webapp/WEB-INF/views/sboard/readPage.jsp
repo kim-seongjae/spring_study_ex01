@@ -47,6 +47,37 @@
 	<input type='hidden' name='perPageNum' value="${cri.perPageNum}">
 </form>
 
+<div class="row">
+	<div class="col-md-12">
+		<div class="box box-success">
+			<div class="box-header">
+				<h3 class="box-title">ADD NEW REPLY</h3>
+			</div>
+			<div class="box-body">
+				<label for="newReplyWriter">Writer</label>
+				<input class="form-control" type="text" placeholder="USER ID" id="newReplyWriter"> 
+				<label for="newReplyText">ReplyText</label>
+				<input class="form-control" type="text" placeholder="REPLY TEXT" id="newReplyText">
+			</div>
+			<!-- /.box-body -->
+			<div class="box-footer">
+				<button type="submit" class="btn btn-primary" id="replyAddBtn">ADD REPLY</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- The time line -->
+<ul class="timeline">
+	<!-- timeline time label -->
+	<li class="time-label" id="repliesDiv"><span class="bg_green"> Replies List</span></li>
+</ul>
+<ul class='text-center'>
+	<ul id="pagination" class="pagination pagination-sm no-margin">
+	</ul>
+</ul>
+
+
 
 <%@include file="../include/footer.jsp"%>
 
